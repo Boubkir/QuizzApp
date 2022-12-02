@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+    <script src="script.js"></script>
+    <title>QuizZApp</title>
+</head>
+
+<body onload="init()">
+
+    <div class="card startquiz" id="startquiz">
+        <div class="left">
+            <div class="center">
+                <img src="img/logo.png" alt="">
+            </div>
+            <nav>
+                <div onclick="startQuiz()" class="hover"><a href="#">ALL</a></div>
+                <div onclick="startQuiz()" class="hover"><a href="#">GE</a></div>
+                <div onclick="startQuiz()" class="hover"><a href="#">MEI</a></div>
+                <div onclick="startQuiz()" class="hover"><a href="#">NE</a></div>
+                <div onclick="startQuiz()" class="hover"><a href="#">FRA</a></div>
+                <div onclick="startQuiz()" class="hover"><a href="#">GEN</a></div>
+            </nav>
+        </div>
+        <div class="right bgimg">
+            <div class="margint">
+                <h2>Welcome to <br>The Awesome HTML Quiz</b></h2>
+                <span>Ready for the Challenge?</span>
+            </div>
+            <div class="startbutton" onclick="startQuiz()"><span>START NOW</span><img
+                    src="img/icons/icons8-chevron-right-30.png" alt=""></div>
+        </div>
+    </div>
+
+    <div id="questioncontent" class="content" style="display:none">
+        <div class="card">
+            <div class="questioncount" id="questioncount">1 von 8 Fragen</div>
+            <div class="left">
+                <div class="center">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <nav>
+                    <div onclick="startQuiz()" class="hover"><a href="#">ALL</a></div>
+                    <div onclick="startQuiz()" class="hover"><a href="#">GE</a></div>
+                    <div onclick="startQuiz()" class="hover"><a href="#">MEI</a></div>
+                    <div onclick="startQuiz()" class="hover"><a href="#">NE</a></div>
+                    <div onclick="startQuiz()" class="hover"><a href="#">FRA</a></div>
+                    <div onclick="startQuiz()" class="hover"><a href="#">GEN</a></div>
+                </nav>
+            </div>
+            <div class="myprogess" id="myProgress">
+                <div class="mybar" id="myBar"></div>
+              </div>
+            <div class="right fontrubik spacearound">
+                <h2 id="question"></h2>
+                <div onclick="answer('answer1')" id="answer1" class="answer"></div>
+                <div onclick="answer('answer2')" id="answer2" class="answer"></div>
+                <div onclick="answer('answer3')" id="answer3" class="answer"></div>
+                <div onclick="answer('answer4')" id="answer4" class="answer"></div>
+            </div>
+        </div>
+        <div class="nextback">
+            <button onclick="lastQuestion()" class="backbutton"><img src="img/icons/icons8-winkel-links-60.png"
+                    alt=""></button>
+            <button onclick="nextQuestion()" disabled id="nextbutton"><img src="img/icons/icons8-winkel-rechts-60.png"
+                    alt=""></button>
+        </div>
+    </div>
+
+    <div class="content" id="endscreen" style="display:none">
+        <div class="card startquiz">
+            <img class="tropy" src="img/tropy.png" alt="">
+            <div class="left">
+                <div class="center"> 
+                    <img src="img/logo.png" alt="">
+                </div>
+                <nav>
+                    <div onclick="startQuiz()" class="hover"><a href="#">ALL</a></div>
+                    <div onclick="startQuiz()" class="hover"><a href="#">GE</a></div>
+                    <div onclick="startQuiz()" class="hover"><a href="#">MEI</a></div>
+                    <div onclick="startQuiz()" class="hover"><a href="#">NE</a></div>
+                    <div onclick="startQuiz()" class="hover"><a href="#">FRA</a></div>
+                    <div onclick="startQuiz()" class="hover"><a href="#">GEN</a></div>
+                </nav>
+            </div>
+            <div class="right fontrubik endscreen spacearound">
+                <div class="column">
+                    <img src="img/brainresult.png" alt="">
+                    <span class="bold">COMPLETE <br>HTML QUIZ</span>
+                </div>
+                <div><span class="scorespan">YOUR SCORE</span><span id="score" class="score">10/10</span></div>
+                <div class="column">
+                    <a onclick="share()" class="sharebutton">SHARE</a>
+                    <span class="reply" onclick="replay()">REPLAY</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

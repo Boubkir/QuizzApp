@@ -1,0 +1,423 @@
+body {
+    font-family: 'rubik', 'sans-serif';
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    height: 80vh;
+    width: 80vw;
+    border-radius: 10px;
+}
+
+.left {
+    background-color: rgb(39, 53, 92);
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 25%;
+    border-radius: 10px 0 0 10px;
+}
+
+.left img {
+    height: 84px;
+    width: 97px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 100;
+    text-align: center;
+}
+
+nav div {
+    width: 100%;
+    margin-bottom: 32px;
+    border-left: 8px solid transparent;
+}
+
+.hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover:hover {
+    width: 100%;
+    margin-bottom: 32px;
+    border-left: 8px solid white;
+}
+
+.bgimg {
+    background-image: url('img/brainbg.jpg');
+    background-position: center;
+}
+
+.right {
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(247, 247, 247);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 75%;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+}
+
+.right span {
+    font-size: 24px;
+}
+
+.right h2 {
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+
+.margint {
+    margin-top: 155px;
+}
+
+.startbutton {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    background-color: rgb(255, 75, 12);
+    border-radius: 10px;
+    padding: 8px 16px 8px 16px;
+    color: white;
+    font-size: 24px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.startbutton img {
+    margin-left: 24px
+}
+
+.answer {
+    background-color: white;
+    height: 60px;
+    width: 95%;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    font-size: 24px;
+    height: fit-content;
+}
+
+.answer:hover {
+    cursor: pointer;
+    background-color: rgba(0 0 0 0.2);
+}
+
+.backbutton {
+    opacity: 0;
+}
+
+.choise {
+    margin-left: 10px;
+    min-height: 45px;
+    min-width: 45px;
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 55px;
+    max-height: 55px;
+}
+
+.fontrubik {
+    font-family: 'rubik', 'sans-serif';
+}
+
+.spacearound {
+    justify-content: space-around;
+}
+
+.bggreen {
+    background-color: rgb(183 247 153);
+}
+
+.bggreenletter {
+    background-color: rgb(79 190 23);
+}
+
+.bgred {
+    background-color: rgb(255 163 164);
+}
+
+.bgredletter {
+    background-color: rgb(247 24 25);
+}
+
+.nextback {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    float: right;
+    margin-top: 8px;
+}
+
+.nextback button {
+    background-color: rgb(191, 193, 211);
+    border-radius: 100%;
+    border: unset;
+}
+
+.nextback button img {
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+    width: auto;
+    padding: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: unset;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.questioncount {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    z-index: 1;
+}
+
+.endscreen {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.score {
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.scorespan {
+    font-weight: bold;
+    color: rgb(238 137 59);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.sharebutton {
+    background-color: rgb(23 60 233);
+    color: white;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.reply {
+    color: rgb(23 60 233);
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.column img {
+    margin-bottom: 16px;
+}
+
+.questionfield {
+    margin-left: 16px;
+}
+
+.tropy {
+    position: absolute;
+    right: 0;
+    top: 203px;
+    z-index: 1;
+    object-fit: cover;
+    height: 306px;
+}
+
+@media(max-width:900px) {
+    .body {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .tropy {
+        display: none;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 100vw;
+        height: 93vh;
+    }
+
+    .left {
+        width: 100%;
+        border-radius: 0;
+        align-items: center;
+    }
+
+    .left img {
+        padding: 0;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    .right {
+        width: 100%;
+        border-radius: 0;
+        position: relative;
+        height: 100%;
+    }
+
+    .answer {
+        margin: 0;
+        font-size: 20px;
+        padding: 10px;
+        width: 95%;
+    }
+
+    .choise {
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav a {
+        padding: 0;
+        font-size: 26px;
+    }
+
+    .nav div {
+        border-left: unset;
+    }
+
+    .nextback {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-top: unset;
+        height: 7vh;
+    }
+
+    .nextback button {
+        border-radius: 0;
+        width: 100%;
+        border: 1px solid black;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .hover {
+        border-bottom: 8px solid transparent;
+        border-left: unset;
+        margin-left: 16px;
+    }
+
+    .hover:hover {
+        width: 100%;
+        margin-bottom: 32px;
+        border-left: none;
+        border-bottom: 8px solid white;
+    }
+
+    .questioncontent {
+        height: 100vh;
+    }
+
+    .questioncount {
+        bottom: 2px;
+        right: 2px;
+        position: absolute;
+        display: none;
+    }
+
+    .startquiz {
+        height: 100vh;
+    }
+
+    .startbutton {
+        position: unset;
+        margin-top: 80px;
+    }
+
+    .right h2 {
+        margin: 0;
+        font-size: 22px;
+    }
+
+    .backbutton {
+        display: none;
+    }
+
+    .questionfield {
+        text-align: start;
+    }
+
+    .myprogress {
+        width: 100%;
+        background-color: grey;
+    }
+      
+    .mybar {
+        width: 0%;
+        height: 30px;
+        background-color: green;
+    }
+}
