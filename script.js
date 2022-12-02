@@ -236,7 +236,6 @@ function lastQuestion() {
         currentQuestion--;
         showQuestion();
         resetAnswerButton();
-    } else {
     }
 }
 
